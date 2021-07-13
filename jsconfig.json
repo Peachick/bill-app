@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+	"baseUrl": ".",
+	"target": "es2016",
+	"allowSyntheticDefaultImports": true,
+	"paths": {
+	  "@/*": ["./src/*"],
+	  "@style/*": ["./src/style/*"],
+	  "@assets/*": ["./src/assets/*"],
+	  "@views/*": ["./src/views/*"],
+	  "@api/*": ["./src/api/*"],
+	  "@util/*": ["./src/util/*"],
+	  "@config/*": ["./config/*"],
+	  "@components/*": ["./src/component/*"],
+	  "@router/*": ["./src/router/*"],
+	  "@locale/*": ["./src/locale"]
+	}
+  },
+  "exclude": ["node_modules", "./dist"],
+  "include": ["./src"]
+}
