@@ -1,0 +1,50 @@
+@mixin base {
+  border-radius: 3px;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  width: 60px;
+  height: 25px;
+  border: none;
+  box-shadow: 0 0 2px #ded8d8;
+  cursor: pointer;
+  margin: 10px 10px;
+  transition: all 200ms ease;
+}
+
+.bill-btn {
+  @include base;
+
+  &:hover {
+	box-shadow: 1px 1px 8px #ded8d8;
+  }
+  &:active {
+	box-shadow: 0 0 10px #fafafa;
+  }
+
+  &.bill-btn-primary {
+	background: dodgerblue;
+	color: #fff;
+
+	&:active {
+	  box-shadow: 0 0 10px dodgerblue;
+	}
+  }
+  &.bill-btn-danger {
+	background: #ea1f1f;
+	color: #fff;
+
+	&:active {
+	  box-shadow: 0 0 10px #ea1f1f;
+	}
+  }
+
+  &.bill-btn-success {
+	background: #29c10d;
+	color: #fff;
+
+	&:active {
+	  box-shadow: 0 0 10px #29c10d;
+	}
+  }
+}

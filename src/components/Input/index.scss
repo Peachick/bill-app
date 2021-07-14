@@ -1,0 +1,12 @@
+.bill-input {
+  width: auto;
+  border-radius: 2px;
+  padding: 5px 5px;
+  border: 1px solid #efefef;
+  font-size: 12px;
+
+  &:focus {
+	outline: none;
+	box-shadow: 0 0 3px #efefef;
+  }
+}
