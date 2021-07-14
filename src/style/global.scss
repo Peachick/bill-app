@@ -1,3 +1,69 @@
+$sideBarWidth: 250px;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
   background: #efefef;
+}
+
+.page-wrap{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  background: #E6E7E9;
+
+  .page-content {
+	padding: 20px 0;
+	padding-left: $sideBarWidth;
+	.content-wrap {
+	  width: 70%;
+	  min-width: 600px;
+	  margin: 0 auto;
+	  padding: 30px;
+	  background: #fff;
+	  box-shadow: 1px 1px 8px rgb(0 0 0 / 15%);
+	  min-height: 800px;
+	}
+  }
+
+  //侧边
+  .bill-sidebar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: $sideBarWidth;
+	background: #F0F1F4;
+	vertical-align: top;
+	height: 100vh;
+	min-height: 600px;
+	overflow-y: auto;
+	box-shadow: 0 0 2px #c2c2c2;
+	padding: 30px 20px;
+
+	.bill-sidebar-item{
+	  padding: 10px 20px;
+
+	  a {
+		text-decoration: none;
+		color: #333333;
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	  }
+
+	  &.active {
+		a {
+		  color: dodgerblue;
+		}
+		font-weight: 600;
+	  }
+	}
+  }
 }
