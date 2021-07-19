@@ -10,6 +10,7 @@ import ClassComponent from "@views/ClassComponents";
 import StateComponent from "@views/StateComponent";
 import PropsComponent from "@views/PropsComponent";
 import FormExample from "@views/FormExample";
+import UtilExample from "@views/UtilExample";
 
 const router = [
 	{
@@ -46,6 +47,11 @@ const router = [
 		path: "/form-example",
 		title: "一个Form",
 		component: <FormExample />,
+	},
+	{
+		path: "/util-example",
+		title: "UTILS",
+		component: <UtilExample />,
 	},
 ];
 
